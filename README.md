@@ -21,10 +21,39 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-Then, you need to download the data:
-```
-bash download_data.sh
-```
+
+### Download the dataset
+You need the MSMARCO dataset to run the code.
+You can download the dataset from [here](https://microsoft.github.io/msmarco/TREC-Deep-Learning-2020) and [here](https://github.com/grill-lab/DL-Hard).
+After downloading the dataset, you need to extract the files and put them in the `data` directory.
+Here is the list of the files you need to put in the `data` directory:
+
+- `collection.tsv`
+
+
+- `queries.train.tsv`
+- `qrels.train.tsv`
+- `top1000.train.tar.gz`
+
+
+- `queries.dev.small.tsv`
+- `qrels.dev.small.tsv`
+- `top1000.dev.tar.gz`
+
+
+- `msmarco-test2019-queries.tsv`
+- `2019qrels-pass.txt`
+- `msmarco-passagetest2019-top1000.tsv`
+
+
+- `msmarco-test2020-queries.tsv`
+- `2020qrels-pass.txt`
+- `msmarco-passagetest2020-top1000.tsv`
+
+
+- `dl_hard-passage.qrels`
+- `topics.tsv (from DL-Hard)`
+- `bm25.run (from DL-Hard)`'
 
 ### Prepare the data
 
