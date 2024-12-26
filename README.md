@@ -53,7 +53,7 @@ Here is the list of the files you need to put in the `data` directory:
 
 - `dl_hard-passage.qrels`
 - `topics.tsv (from DL-Hard)`
-- `bm25.run (from DL-Hard)`'
+- `bm25.run (from DL-Hard)`
 
 ### Prepare the data
 
@@ -118,21 +118,21 @@ The below table shows the results of our proposed method (NN-QPP) compared to th
     <th colspan="3">TREC DL 2021 (53 Queries)</th>
   </tr>
   <tr>
-    <th>Pearson rho</th>
-    <th>kendall tau</th>
-    <th>Spearman rho</th>
-    <th>Pearson Rho</th>
-    <th>kendall Tau</th>
-    <th>Spearman rho</th>
-    <th>Pearson Rho</th>
-    <th>kendall Tau</th>
-    <th>Spearman rho</th>
-    <th>Pearson Rho</th>
-    <th>kendall Tau</th>
-    <th>Spearman rho</th>
-    <th>Pearson Rho</th>
-    <th>kendall Tau</th>
-    <th>Spearman rho</th>
+    <th>Pearson $\rho$</th>
+    <th>kendall $\tau$</th>
+    <th>Spearman $\rho$</th>
+    <th>Pearson $\rho$</th>
+    <th>kendall $\tau$</th>
+    <th>Spearman $\rho$</th>
+    <th>Pearson $\rho$</th>
+    <th>kendall $\tau$</th>
+    <th>Spearman $\rho$</th>
+    <th>Pearson $\rho$</th>
+    <th>kendall $\tau$</th>
+    <th>Spearman $\rho$</th>
+    <th>Pearson $\rho$</th>
+    <th>kendall $\tau$</th>
+    <th>Spearman $\rho$</th>
   </tr>
 </thead>
 <tbody>
@@ -281,7 +281,7 @@ The below table shows the results of our proposed method (NN-QPP) compared to th
     <td>0.292</td>
   </tr>
   <tr>
-    <td>UEF_{NQC}</td>
+    <td>$UEF_{NQC}$</td>
     <td>0.316</td>
     <td>0.303</td>
     <td>0.398</td>
@@ -371,7 +371,7 @@ The below table shows the results of our proposed method (NN-QPP) compared to th
     <td>0.015</td>
   </tr>
   <tr>
-    <td>NN-QPP</td>
+    <td>Ours (NN-QPP)</td>
     <td><strong>0.555</strong></td>
     <td><strong>0.421</strong></td>
     <td><strong>0.544</strong></td>
