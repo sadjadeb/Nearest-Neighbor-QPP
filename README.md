@@ -1,4 +1,4 @@
-# post-nn-qpp : Estimating Query Performance Through Rich Contextualized Query Representations
+# NN-QPP: Estimating Query Performance Through Rich Contextualized Query Representations
 
 ## Introduction
 The state-of-the-art query performance prediction methods rely on the fine-tuning of contextual language models to estimate retrieval effectiveness on a per-query basis. Our work in this paper builds on this strong foundation and proposes to learn rich query representations by learning the interactions between the query and two important contextual information, namely the set of documents retrieved by that query, and the set of similar historical queries with known retrieval effectiveness. We propose that such contextualized query representations can be more accurate estimators of query performance as they embed the performance of past similar queries and the semantics of the documents retrieved by the query. We perform extensive experiments on the MSMARCO collection and its accompanying query sets including MSMARCO Dev set and TREC Deep Learning tracks of 2019, 2020, 2021,
@@ -7,11 +7,11 @@ and DL-Hard. Our experiments reveal that our proposed method shows robust and ef
 ## Running the code
 first, you need to clone the repository:
 ```
-git clone https://github.com/sadjadeb/nearest-neighbour-qpp.git
+git clone https://github.com/sadjadeb/Nearest-Neighbor-QPP.git
 ```
 Then, you need to create a virtual environment and install the requirements:
 ```
-cd nearest-neighbour-qpp/
+cd Nearest-Neighbor-QPP/
 sudo apt-get install virtualenv
 virtualenv venv
 source venv/bin/activate
@@ -57,5 +57,21 @@ python test.py
 To evaluate the model, you need to run the following command:
 ```
 python evaluation.py --actual /path/to/actual/performance/file --predicted /path/to/predicted/performance/file --target_metric /target/metric
+```
+
+## Citation
+If you use this code, please cite our paper:
+```
+@inproceedings{ebrahimi2024estimating,
+    title = {Estimating Query Performance Through Rich Contextualized Query Representations},
+    author = {Ebrahimi, Sajad and Khodabakhsh, Maryam and Arabzadeh, Negar and Bagheri, Ebrahim},
+    year = {2024},
+    month = {03},
+    pages = {49-58},
+    booktitle={European Conference on Information Retrieval},
+    organization={Springer},
+    isbn = {978-3-031-56065-1},
+    doi = {10.1007/978-3-031-56066-8_6}
+}
 ```
 
